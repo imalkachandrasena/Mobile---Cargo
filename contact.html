@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Contacts | Online Mobile Phone Market Place</title>
+    <link rel="shortcut icon" href="Images/Mobile - Cargo logo.png">
+    <link rel="stylesheet" href="stylecontact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("b09G2FcBt0PVRGZKg");
+    })();
+    </script>
+
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="Images/Mobile - Cargo logo.png" class="logo"></a>
+
+        <div>
+            <ul id ="navbar">
+                <a href="index.html"><li>Home</li></a>
+                <a href="products.html"><li>Products</li></a>
+                <a href="contact.html"><li class="active">Contact</li></a>
+                <a href="cart.html"><li>Cart</li></a>
+                <a href="account.html"><li>Account</li></a>
+            </ul>
+        </div>
+    </section>
+
+    <section id="banner">
+        <div id="contact-banner-img"></div>
+        <div id="contact-banner-text">
+            <h1 id="banner-heading">#Let's_Talk.</h1>
+            <p class="banner-text">LEAVE A MESSAGE,We love to here from you!</p>
+        </div>
+    </section>
+
+    <section id="address-map">
+        <div id="address">
+            <span>Get in Touch</span>
+            <h2>Visit our Shop or Contact us today</h2>
+            <h3>Mobile - Chargo Phone Market</h3>
+            <i class="fa fa-map" aria-hidden="true"></i>
+            <p>XXXX, XXXXXX Road, XXXXXX ,XXXXXX XX.</p>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <p>imalkachandrasena@gmail.com</p>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>07x-xxxxxxx / 07x-xxxxxxx</p>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <p>09.00 - 18.00 Mon - Sat (Online - 24/7 Hours)</p>
+            <br>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook icon-4x" aria-hidden="true" style="padding-left: 12px;"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram icon-4x" aria-hidden="true" style="padding-left: 12px;"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube-play icon-4x" aria-hidden="true" style="padding-left: 12px;"></i></a>
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.272499853784!2d79.86581331415104!3d6.857907321089468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25ba993cce8a9%3A0x46489bac03c03697!2sATI%20Dehiwala!5e0!3m2!1sen!2slk!4v1667678918950!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="form-employee">
+        <div id="form">
+            <p>LEAVE A MESSAGE</p>
+            <h2>We love to hear from you...</h2>
+            <form class="contact">
+                <input type="text" name="name" placeholder="Your Name" id="name"><br>
+                <input type="email" name="email" placeholder="E-mail" id="email"><br>
+                <input type="text" name="subject" placeholder="Subject" id="subject"><br>
+                <textarea name="Message" placeholder="Your Message" cols="30" rows="10" style="resize: none;" id="message"></textarea>
+            </form>
+            <button id="submitbutton" type="submit" onclick="sendMail()">Submit</button>
+        </div>
+        <div id="employee">
+            <div id="one">
+                <img src="Images/user.png" alt="employee-img" style="border-radius: 50%;width: 100px;height: 100px;">
+                <div class="details">
+                    <h3>Shop Keeper</h3>
+                    <p>Phone: 07X-XXXXXXX</p>
+                    <p>E-mail: abcdefgh@gmail.com</p>
+                </div>
+            </div>
+            <div id="one">
+                <img src="Images/user.png" alt="employee-img" style="border-radius: 50%;width: 100px;height: 100px;">
+                <div class="details">
+                    <h3>Maintaince</h3>
+                    <p>Phone: 07X-XXXXXXX</p>
+                    <p>E-mail: abcdefgh@gmail.com</p>
+                </div>
+            </div>
+            <div id="one">
+                <img src="Images/user.png" alt="employee-img" style="border-radius: 50%;width: 100px;height: 100px;">
+                <div class="details">
+                    <h3>Manager</h3>
+                    <p>Phone: 07X-XXXXXXX</p>
+                    <p>E-mail: abcdefgh@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="fotter-banner">
+        <div id="col">
+            <img src="Images/Mobile - Cargo logo.png" >
+            <div id="follow">
+                <h4>Follow Us</h4>
+                <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div id="col">
+            <h4>Contacts</h4>
+            <p><strong>Address:</strong>XXXX, XXXXXX Road, XXXXXX ,XXXXXX XX.</p>
+            <p><strong>Phone:</strong>07x-xxxxxxx / 07x-xxxxxxx</p>
+            <p><strong>Hours:</strong>09.00 - 18.00 Mon - Sat (Online - 24/7 Hours)</p>
+        </div>
+        <div id="col">
+            <h4>My Account</h4>
+            <a href="account.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+        </div>
+        <div id="col">
+            <h4>Quick Links</h4>
+            <a href="products.html">Special Offers</a>
+            <a href="products.html">Gift Cards</a>
+        </div>
+    </section>
+
+    <footer id="fotter">
+            <div>
+                <p>Copyright &copy; 2022 Mobile - Cargo All Rights Reserved.</p>
+            </div>
+            <div>
+                <p>Design By Imalka Chandrasena (Student - HNDIT 2020/21 batch)</p>
+            </div>
+    </footer>
+    <script src="scriptcontact.js"></script>
+</body> 
+</html>

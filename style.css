@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono',monospace;
+}
+
+/*----------------------------header-----------------------*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 15px 10px 15px;
+    background: linear-gradient(to bottom,rgb(171, 167, 199),rgb(127, 187, 207));
+    box-shadow: 0px 0px 2px rgb(119, 139, 148);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+.logo{
+    width:250px; 
+    height:50px; 
+    border-radius:5px;
+    transition: 0.3s ;
+}
+.logo:hover{
+    box-shadow: 0px 2px 8px rgb(0, 0, 0);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 15px 0px 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#navbar a{  
+    text-decoration: none;
+    position: relative;
+}
+#navbar li:hover,
+#navbar li.active{
+    color: rgb(4, 47, 126);
+}
+#navbar li.active::after,
+#navbar li:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(4, 47, 126);
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+}
+
+/*-----------------home content-------------------------------*/
+
+#home-content{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:radial-gradient(white,rgb(127, 187, 207));
+}
+.home-text{
+    padding-left: 80px;
+}
+h4{
+    font-size: 20px;
+}
+h3{
+    font-size: 25px;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+}
+.home-4to img{
+    border-radius:8px;
+}
+#product{
+    background-color: rgb(165, 235, 235);
+    height: 400px;
+}
+#pro-text{
+    text-align: center;
+    padding: 20px 0px 85px 0px;
+    color: rgb(18, 87, 64); 
+}
+#pro-text h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+}
+.product-images{
+    display: flex;
+    padding: 0px 0px 30px 15px;
+    flex-wrap: wrap;
+}
+.product-images img{
+    border-radius: 50%;
+    width: 215px;
+    height: 135px;
+    padding: 0px 35px 0px 35px;
+    transition: 0.6s;
+}
+.product-images img:hover{
+    transform: translateY(-15px);
+}
+
+/*---------------------------discount banner-----------------------------------*/
+
+#dis-banner{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url(Images/discount.jpg);
+    width: 100%;
+    height: 50vh;
+    background-position:center;
+    background-size: cover;
+    margin-top: 30px;
+}
+#dis-banner h4{
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    padding: 0px 0px 8px 0px;
+}
+#dis-banner h2{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    padding: 0px 0px 20px 0px;
+}
+#dis-banner h2 span{
+    color: azure;
+    font-size: 48px;
+}
+#dis-banner button{
+    width: 180px;
+    height:30px;
+    background-color: rgb(185, 183, 183);
+    color: black;
+    border: 1px rgb(104, 101, 101) solid;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#dis-banner button:hover{
+    background-color: rgb(14, 99, 99);
+    color: aliceblue;
+    border-color: rgb(12, 124, 124);
+}
+
+
+/*----------------------comments----------------------------------*/
+
+
+#comments{
+    padding: 30px 0px 0px 0px;   
+}
+.cmt-p{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(63, 122, 103);
+}
+#cm-block{
+    display: flex;
+    margin: 50px;
+}
+#cmt{
+    padding:0px 45px;
+    box-shadow: 1px 1px 12px rgb(213, 218, 230);
+    margin: 10px;
+    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(183, 218, 230));
+    transition: 0.6s;
+    border-radius: 10px;
+    text-align: center;
+}
+#cmt:hover{
+    box-shadow: 1px 1px 30px rgb(90, 107, 138);
+    transform: scale(1.029);
+}
+#cmt-4to{
+    border-radius: 80%;
+    height: 120px;
+    width: 120px;
+    margin-top: 5px;
+}
+.fa.fa-quote-left{
+    color: rgb(170, 108, 38);
+    font-size: 40px;
+}
+.fa.fa-star{
+    color: rgb(170, 108, 38);
+}
+.fa.fa-star-half-o{
+    color: rgb(170, 108, 38);
+}
+
+/*-------------------newsletter--------------------*/
+
+#newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url(Images/newsletter.jpg);
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    padding: 0px 80px 0px 25px;
+}
+#news-text h3{
+    color: rgb(128, 185, 240);
+}
+#news-text p{
+    color: rgb(170, 204, 193);
+}
+#news-text span{
+    color: rgb(205, 207, 40);
+}
+.news-input{
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    width: 100%;
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#newsletter button{
+    height: 3.125rem;
+    font-size: 18px;
+    width: 8rem;
+    background-color: rgb(20, 179, 228);
+    color: white;
+    white-space: nowrap;
+    border-radius: 4px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/*---------------footer banner----------------------------*/
+
+#fotter-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 50px 50px; */
+    padding: 50px 30px 10px 30px;
+    /* height: 0px; */
+    background:radial-gradient(white,rgb(177, 209, 219));
+}
+#col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+#col img{
+    width: 340px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+#col h4{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+#col p{
+    font-size: 15px;
+}
+#col a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+#col #follow{
+    margin-top: 10px;
+}
+#col #follow i{
+    color: rgb(99, 98, 98);
+    padding-right: 4px;
+}
+#col #follow i:hover,
+#col a:hover{
+    color: rgb(86, 194, 158);
+}
+/*------------------------footer--------------------------*/
+
+#fotter{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    background:radial-gradient(rgb(187, 226, 223),rgb(177, 209, 219));
+}

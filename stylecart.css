@@ -1,0 +1,303 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono',monospace;
+}
+
+/*----------------------------header-----------------------*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 15px 10px 15px;
+    background: linear-gradient(to bottom,rgb(171, 167, 199),rgb(127, 187, 207));
+    box-shadow: 0px 0px 2px rgb(119, 139, 148);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+} 
+.logo{
+    width:250px; 
+    height:50px; 
+    border-radius:5px;
+    transition: 0.3s ;
+}
+.logo:hover{
+    box-shadow: 0px 2px 8px rgb(0, 0, 0);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 15px 0px 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#navbar a{  
+    text-decoration: none;
+    position: relative;
+}
+#navbar li:hover,
+#navbar li.active{
+    color: rgb(4, 47, 126);
+}
+#navbar li.active::after,
+#navbar li:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(4, 47, 126);
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+}
+
+/*----------------------banner-------------------*/
+
+#banner{
+    background: url(Images/cart-banner1.jpg);
+    width: 100%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+}
+#banner h1{
+    font-size: 65px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: end;
+    padding-top: 70px;
+    padding-right: 45px;
+}
+#banner p{
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 45px;
+    color: rgb(0, 0, 0);
+    text-align: end;
+}
+
+/*------------------------cart----------------------------*/
+
+.cart{
+    padding: 70px;
+    background: linear-gradient(120deg,rgb(123, 195, 219),rgb(211, 157, 127));
+}
+.cart h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+table{
+   width: 100%; 
+   border-collapse: collapse;
+}
+/* .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-info div{
+    padding: 10px;
+} */
+th{
+    text-align: left;
+    padding: 10px;
+    color: snow;
+    background: rgb(16, 66, 133);
+    font-weight: normal;
+    font-size: 20px;
+}
+td{
+    padding: 10px 5px;
+    font-weight: 900;
+    font-size: 18px;
+}/*
+td img{
+    width: 100px;
+    height: 110px;
+}
+td input{
+    width: 50px;
+    height: 30px;
+    padding: 8px;
+    font-weight: 900;
+    font-size: 15px;
+    border: transparent;
+    background: rgb(157, 210, 243);
+}
+td button{
+    /* text-decoration: none; 
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    border: transparent;
+    background-color: rgb(91, 166, 236);
+    padding: 5px;
+    border-radius: 8px;
+} */
+.total{
+    display: flex;
+    justify-content: flex-end;
+}
+.total table{
+    border-top: 3px solid lightseagreen;
+    width: 100%;
+    max-width: 350px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: center;
+}
+
+
+.cart-column{
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+    margin-right: 1.5rem;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row{
+    display: flex;
+}
+.cart-item{
+    width: 100%;
+}
+.cart-items{
+    margin-bottom: 10px;
+}
+.cart-price{
+    width: 20%;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: -820px;
+}
+.cart-quantity{
+    width: 35%;
+}
+.cart-item-title{
+    color: rgb(0, 0, 0);
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    margin-right: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 3px solid #419ab8;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 280px;
+}
+.remove{
+    background: #2d549b;
+    border: transparent;
+    font-size: 15px;
+    color: rgb(49, 0, 0);
+    padding: 8px;
+    border-radius: 12px;
+    margin-left: 130px;
+    cursor: pointer;
+}
+/* .cart-row:last-child {
+    border-bottom: 1px solid black;
+} */
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+.purchasebtn button{
+    font-size: 26px;
+    font-weight: 900;
+    background: linear-gradient(120deg,rgb(76, 135, 155),rgb(173, 120, 91));
+    color: rgb(224, 223, 223);
+    padding: 15px;
+    border: 1px solid rgb(127, 187, 207);
+    border-radius: 8px;
+    position: relative;
+    left: 48%;
+    transition: color 0.7s;
+}
+.purchasebtn button:hover{
+    background: linear-gradient(-120deg,rgb(76, 135, 155),rgb(173, 120, 91));
+    color: #f9feff;
+}
+
+/*---------------footer banner----------------------------*/
+
+#fotter-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 50px 50px; */
+    padding: 50px 30px 10px 30px;
+    /* height: 0px; */
+    background:radial-gradient(white,rgb(177, 209, 219));
+}
+#col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+#col img{
+    width: 340px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+#col h4{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+#col p{
+    font-size: 15px;
+}
+#col a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+#col #follow{
+    margin-top: 10px;
+}
+#col #follow i{
+    color: rgb(99, 98, 98);
+    padding-right: 4px;
+}
+#col #follow i:hover,
+#col a:hover{
+    color: rgb(86, 194, 158);
+}
+/*------------------------footer--------------------------*/
+
+#fotter{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    background:radial-gradient(rgb(187, 226, 223),rgb(177, 209, 219));
+}

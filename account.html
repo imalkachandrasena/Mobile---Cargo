@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Account | Online Mobile Phone Market Place</title>
+    <link rel="shortcut icon" href="Images/Mobile - Cargo logo.png">
+    <link rel="stylesheet" href="styleaccount.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("b09G2FcBt0PVRGZKg");
+    })();
+    </script>
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="Images/Mobile - Cargo logo.png" class="logo"></a>
+
+        <div>
+            <ul id ="navbar">
+                <a href="index.html"><li>Home</li></a>
+                <a href="products.html"><li>Products</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="cart.html"><li>Cart</li></a>
+                <a href="account.html"><li  class="active">Account</li></a>
+            </ul>
+        </div>
+    </section>
+
+    <section id="upperbanner">
+        <h1>#stay_connected</h1>
+    </section>
+
+    <section id="account">
+       <div class="maindiv">
+            <div class="buttonpart">
+                <img src="Images/Mobile - Cargo logo.png" alt="logo">
+                <h3>Stay connected with <br> the best Online Mobile Phone Market</h3>
+                <button id="loginbtn">Login</button>
+                <p><span>One Of Us?</span> Click Above! <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+                <button id="signupbtn">Sign Up</button>
+                <p><span>New Here?</span> Click Above & get more discounts and other featuers!</p>
+            </div>
+            <div class="container">
+                <div class="forms-container">
+                    <div class="login-signup">
+                        <form class="login-form" onsubmit="refreshStop()">
+                            <h2 class="title">Login</h2>
+                            <div class="input-field">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Username" id="name">
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Password" id="pass">
+                            </div>
+                        
+                        <div class="btn-text-part-login">
+                            <button id="btn" onclick="validation()">login</button>
+                            <!-- <a href="#" id="forgot-password"><p>Forgot Password</p></a> -->
+                            <p class="social-text">
+                                Or use these social platforms
+                            </p>
+                            <div class="social-media">
+                                <a href="https://web.facebook.com/?_rdc=1&_rdr" class="social-icon"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/accounts/login/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.google.lk/" class="social-icon"><i class="fa fa-google" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </form>   
+                        <form class="signup-form" onsubmit="refreshStop()">
+                            <h2 class="title">Sign Up</h2>
+                            <div class="input-field">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Username" required id="Username">
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="E-mail" required id="email">
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Password" required id="password">
+                            </div>
+                        
+                        <div class="btn-text-part-signup">
+                            <button id="btn" onclick="sendMail1()">signup</button>
+                            <p class="social-text">
+                                Or use these social platforms
+                            </p>
+                            <div class="social-media">
+                                <a href="https://web.facebook.com/?_rdc=1&_rdr" class="social-icon"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/accounts/login/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.google.lk/" class="social-icon"><i class="fa fa-google" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                <!-- <div class="panels-container">
+                    <div class="panel left-panel">
+                        <img src="Images/rocket.svg" class="image">
+                    </div>
+                    <div class="panel right-panel">
+                        <img src="Images/desk.svg" class="image">
+                    </div>
+                </div>
+            </div>  -->
+       </div>   
+    </section> 
+
+    <section id="fotter-banner">
+        <div id="col">
+            <img src="Images/Mobile - Cargo logo.png" >
+            <div id="follow">
+                <h4>Follow Us</h4>
+                <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div id="col">
+            <h4>Contacts</h4>
+            <p><strong>Address:</strong>XXXX, XXXXXX Road, XXXXXX ,XXXXXX XX.</p>
+            <p><strong>Phone:</strong>07x-xxxxxxx / 07x-xxxxxxx</p>
+            <p><strong>Hours:</strong>09.00 - 18.00 Mon - Sat (Online - 24/7 Hours)</p>
+        </div>
+        <div id="col">
+            <h4>My Account</h4>
+            <a href="account.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+        </div>
+        <div id="col">
+            <h4>Quick Links</h4>
+            <a href="products.html">Special Offers</a>
+            <a href="products.html">Gift Cards</a>
+        </div>
+    </section>
+
+    <footer id="fotter">
+            <div>
+                <p>Copyright &copy; 2022 Mobile - Cargo All Rights Reserved.</p>
+            </div>
+            <div>
+                <p>Design By Imalka Chandrasena (Student - HNDIT 2020/21 batch)</p>
+            </div>
+    </footer>
+    <script src="accountscript.js"></script>
+</body>
+</html>

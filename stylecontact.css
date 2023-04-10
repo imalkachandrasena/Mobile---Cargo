@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono',monospace;
+}
+
+/*----------------------------header-----------------------*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 15px 10px 15px;
+    background: linear-gradient(to bottom,rgb(171, 167, 199),rgb(127, 187, 207));
+    box-shadow: 0px 0px 2px rgb(119, 139, 148);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+.logo{ 
+    width:250px; 
+    height:50px; 
+    border-radius:5px;
+    transition: 0.3s ;
+}
+.logo:hover{
+    box-shadow: 0px 2px 8px rgb(0, 0, 0);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 15px 0px 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#navbar a{  
+    text-decoration: none;
+    position: relative;
+}
+#navbar li:hover,
+#navbar li.active{
+    color: rgb(4, 47, 126);
+}
+#navbar li.active::after,
+#navbar li:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(4, 47, 126);
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+}
+
+/*--------------contact - banner--------------------------*/
+
+#contact-banner-img{
+    background: url(Images/talk.jpg);
+    height: 225px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+#contact-banner-text{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+#banner-heading{
+    color: snow;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    font-weight: 900px;
+}
+.banner-text{
+    font-weight: 900px;
+    font-size: 18px;
+    color: rgb(233, 220, 204);
+}
+
+/*---------------address & map----------------------------*/
+
+#address-map{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(157, 153, 216),rgb(221, 208, 193));
+}
+#address{
+    margin-left: 35px;
+    
+}
+#map{
+    margin-right: 35px;
+    padding: 5px 0px;
+    
+}
+iframe{
+    border-radius: 12px;
+}
+#address span{
+    font-size: 15px;
+}
+#address h2{
+    font-size: 32px;
+    font-weight: bolder;
+    padding: 16px 0px;
+}
+#address h3{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+#address i , p{
+    padding-bottom: 8px;
+}
+#address i{
+    color: black;
+}
+
+/*---------------form & Employee--------------------------*/
+
+#form-employee{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 8px rgb(160, 159, 159);
+    border: 1px solid gray;
+    padding: 10px 20px;
+    background-color: rgb(221, 208, 193);
+}
+#form{
+    width: 55%;
+}
+#form input{
+    width: 100%;
+    margin: 5px 0px;
+    height: 35px;
+    background-color: rgb(238, 240, 240);
+    border-radius: 15px;
+    border: 0px transparent;
+    padding-left: 12px;
+}
+input::placeholder{
+    font-size: 15px;
+}
+#form-employee p{
+    font-size: 12px;
+    color: rgb(112, 112, 112);
+}
+#form-employee h2{
+    font-size: 35px;
+}
+#form-employee h3{
+    font-size: 30px;
+    color: rgb(29, 28, 28);
+}
+#form textarea{
+    width: 100%;
+    margin: 8px 0px;
+    background-color: rgb(238, 240, 240);
+    border-radius: 15px;
+    border: 0px transparent;
+    padding-left: 12px;
+    padding-top: 8px;
+}
+textarea::placeholder{
+    font-size: 15px;
+    padding-top: 5px;
+}
+#form button{
+    height: 3.125rem;
+    font-size: 18px;
+    width: 8rem;
+    background-color: rgb(20, 179, 228);
+    color: white;
+    white-space: nowrap;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-left: 81.50%;
+}
+#employee{
+    margin-right: 45px;
+    overflow: hidden;
+}
+#one{
+    display: flex;
+    align-items: center;
+    margin-right: 95px;
+    padding: 15px 0px;
+}
+/*---------------footer banner----------------------------*/
+
+#fotter-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 50px 50px; */
+    padding: 50px 30px 10px 30px;
+    /* height: 0px; */
+    background:radial-gradient(white,rgb(177, 209, 219));
+}
+#col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+#col img{
+    width: 340px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+#col h4{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+#col p{
+    font-size: 15px;
+}
+#col a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+#col #follow{
+    margin-top: 10px;
+}
+#col #follow i{
+    color: rgb(99, 98, 98);
+    padding-right: 4px;
+}
+#col #follow i:hover,
+#col a:hover{
+    color: rgb(86, 194, 158);
+}
+/*------------------------footer--------------------------*/
+
+#fotter{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    background:radial-gradient(rgb(187, 226, 223),rgb(177, 209, 219));
+}

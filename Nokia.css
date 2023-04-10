@@ -1,0 +1,421 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono',monospace;
+}
+
+/*----------------------------header-----------------------*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 15px 10px 15px;
+    background: linear-gradient(to bottom,rgb(171, 167, 199),rgb(127, 187, 207));
+    box-shadow: 0px 0px 2px rgb(119, 139, 148);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+.logo{
+    width:250px; 
+    height:50px; 
+    border-radius:5px;
+    transition: 0.3s ;
+}
+.logo:hover{
+    box-shadow: 0px 2px 8px rgb(0, 0, 0);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 15px 0px 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#navbar a{  
+    text-decoration: none;
+    position: relative;
+}
+#navbar li:hover,
+#navbar li.active{
+    color: rgb(4, 47, 126);
+}
+#navbar li.active::after,
+#navbar li:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(4, 47, 126);
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+}
+
+/*--------------upper-banner------------------------------*/
+
+.upperbanner{
+    background: url(Images/product-images/product-banner.webp);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.upperbanner h1{
+    color: rgb(43, 116, 226);
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    padding-top: 55px;
+}
+.upperbanner h5{
+    color: rgb(83, 104, 134);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*---------------product-details--------------------------*/
+
+.product-detail{
+    background: linear-gradient(to top,rgb(177, 169, 169),rgb(197, 233, 245));
+    padding-bottom: 50px;
+}
+.product-details{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to top,rgb(177, 169, 169),rgb(197, 233, 245));
+    padding: 25px 0px 25px 20px
+}
+.product{
+    width: 400px;
+    margin-left: 90px;
+}
+.small-imgs{
+    display: flex;
+    justify-content: space-between;
+}
+.small-image-cols{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.small-image-cols img{
+    padding: 0px 0px;
+}
+.details{
+    margin-right: 100px;
+}
+
+.details h2{
+    font-size: 35px;
+    padding: 5px 0px;
+}
+.details ul{
+    padding-left: 18px;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+.details h3,span{
+    font-size: 30px;
+}
+.details span{
+    color: rgb(54, 52, 52);
+}
+.details i{
+    font-size: 25px;
+    color: rgb(92, 88, 88);
+    padding-right: 20px;
+}
+.loanpart{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: rgb(76, 115, 167); */
+    width: 550px;
+    overflow: hidden;
+    margin: 8px;
+}
+.bank{
+    border: 3px solid rgb(61, 140, 189);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    /* background-color: blue; */
+}
+.bank img{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
+.bank span{
+    color: blue;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.color-amount{
+    margin-left: 410px;
+}
+.color-amount p{
+    font-size: 30px;
+    padding: 10px 0px;
+}
+#Capacity , #Color{
+    font-size: 20px;
+    width: 600px;
+    height: 40px;
+    border: 3px solid lightseagreen;
+    border-radius: 15px;
+}
+#Capacity:focus{
+    outline: none;
+}
+#Color:focus{
+    outline: none;
+}
+.color-amount button{
+    padding: 5px;
+    margin-left: 545px;
+    margin-top: 5px;
+    border: 0px transparent;
+    border-radius: 5px;
+    background-color: rgb(140, 177, 165);
+    cursor: pointer;
+}
+
+.buy-or-cart{
+    display: flex;
+    margin-left: 402px;
+}
+.buy-or-cart p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(54, 52, 52);
+    padding: 12px 10px;
+    margin-top: 60px;
+}
+#quantity{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid lightseagreen;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+#quantity:focus{
+    outline: none;
+}
+.cartbtn{
+    margin-left: 15px;
+    background-color: snow;
+    padding: 5px;
+    color: lightseagreen;
+    font-size: 24px;
+    border: 2px solid lightseagreen;
+    border-radius: 12px;
+    margin-top: 60px;
+    cursor: pointer;
+    margin-left: 300px;
+    transition: 0.8s;
+}
+.cartbtn:hover{
+    color: snow;
+    background-color: lightseagreen;
+
+}
+.image{
+    position: relative;
+}
+.magnifier-lens{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background-color: #ff990010;
+    top: 0;
+    left: 0;
+    border: 1px solid #ff990059;
+    opacity: 0;
+}
+.magnifier-lens.active{
+    opacity: 1;
+}
+.magnified-img{
+    position: absolute;
+    width: 55%;
+    height: 82%;
+    top: 47%;
+    left: 43%;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s, transform 0.5s ;
+}
+.magnified-img.active{
+    opacity: 1;
+    transform: scale(1);
+}
+.discrip{
+    background: linear-gradient(to bottom,rgb(177, 169, 169),rgb(197, 233, 245));
+}
+#text{
+    text-align: center;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(3, 97, 114);
+    font-weight: 300;
+    text-align: center;
+}
+#hr{
+    width: 75%;
+    height: 3px;
+    background-color: rgb(112, 126, 126);
+    margin-left: 200px;
+}
+.dis{
+    position: relative;
+    width: 725px;
+    height: 1120px;
+    overflow: hidden;
+    margin-left: 350px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 35px;
+}
+.iframecontain{
+    position: absolute;
+    top: -510px;
+    left: -550px;
+    width: 1500px;
+    height: 2000px;
+}
+.related{
+    padding: 30px;
+    background: linear-gradient(to top,rgb(177, 169, 169),rgb(197, 233, 245));
+}
+.related a{
+    text-decoration: none;
+}
+.related h2{
+    font-size: 35px;
+    color: rgb(11, 116, 81);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.related hr{
+    width: 80%;
+    margin-left: 280px;
+    height: 3px;
+    background-color: gray;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.related-product{
+    width: 338px;
+    height: 365px;
+    border: 2px solid gray;
+    background-color: rgb(255, 255, 255);
+    /* padding: 15px; */
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.related-product img{
+    padding-left: 30px;
+    padding-top: 3px;
+}
+.related-product h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(46, 5, 85);
+    margin-top: -5px;
+}
+.related-product h5{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(79, 5, 148);
+    margin-top: 3px;
+}
+.related-product:hover{
+    transform: scale(1.02);
+    border: transparent;
+}
+.more h1{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*---------------footer banner----------------------------*/
+
+#fotter-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 50px 50px; */
+    padding: 50px 30px 10px 30px;
+    /* height: 0px; */
+    background:radial-gradient(white,rgb(177, 209, 219));
+}
+#col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+#col img{
+    width: 340px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+#col h4{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+#col p{
+    font-size: 15px;
+}
+#col a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+#col #follow{
+    margin-top: 10px;
+}
+#col #follow i{
+    color: rgb(99, 98, 98);
+    padding-right: 4px;
+}
+#col #follow i:hover,
+#col a:hover{
+    color: rgb(86, 194, 158);
+}
+
+
+/*------------------------footer--------------------------*/
+
+#fotter{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    background:radial-gradient(rgb(187, 226, 223),rgb(177, 209, 219));
+}

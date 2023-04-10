@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono',monospace;
+}
+/*----------------------------header-----------------------*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 15px 10px 15px;
+    background: linear-gradient(to bottom,rgb(171, 167, 199),rgb(127, 187, 207));
+    box-shadow: 0px 0px 2px rgb(119, 139, 148);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+.logo{
+    width:250px; 
+    height:50px; 
+    border-radius:5px;
+    transition: 0.3s ;
+}
+.logo:hover{
+    box-shadow: 0px 2px 8px rgb(0, 0, 0);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 15px 0px 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#navbar a{  
+    text-decoration: none;
+    position: relative;
+}
+#navbar li:hover,
+#navbar li.active{
+    color: rgb(4, 47, 126);
+}
+#navbar li.active::after,
+#navbar li:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(4, 47, 126);
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+}
+
+/*---------------Main banner image-----------------------------*/
+#bannertext{
+    text-align: center;
+    font-weight: 900px;
+    font-size: 70px;
+    padding: 50px 0px;
+    word-spacing: -20px;
+}
+#bannerimg{
+    background-image: url(Images/upbanners.jpg);
+    width: 100%;
+    height: 225px;
+    background-position: center;
+    background-size: cover;
+}
+
+/*---------------brand banners----------------------------*/
+#brands{
+    background:radial-gradient(rgb(164, 219, 217),rgb(50, 99, 116));
+}
+#brands a{
+    text-decoration: none;
+    color: black;
+}
+.banner1{
+    background-image: url(Images/Apple-product-banner.png);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.9;
+    margin: 2px 0px 15px 0px;
+    transition: 0.7s;
+}
+.banner2{
+    background-image: url(Images/huawei-banner.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.7;
+    margin: 15px 0px 15px 0px;
+    transition: 0.7s;
+}
+.banner3{
+    background-image: url(Images/mi-banner2.webp);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.7;
+    margin: 15px 0px 15px 0px;
+    transition: 0.7s;
+}
+.banner4{
+    background-image: url(Images/Nokia-banner1.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.7;
+    margin: 15px 0px 15px 0px;
+    transition: 0.7s;
+}
+.banner5{
+    background-image: url(Images/samsung-banner2.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.7;
+    margin: 15px 0px 15px 0px;
+    transition: 0.7s;
+}
+.banner6{
+    background-image: url(Images/zte-banner.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 15px 0px 2px 0px;
+    color: rgb(0, 0, 0);
+    transition: 0.7s;
+}
+#banner1txt{
+    font-size: 60px;
+    font-style: italic;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+.banner1:hover{
+    color: beige;
+    opacity: 1;
+    
+}
+.banner2:hover{
+    color: beige;
+    opacity: 1;
+}
+.banner3:hover{
+    color: beige;
+    opacity: 1;
+}
+.banner4:hover{
+    color: rgb(150, 150, 147);
+    opacity: 1;
+}
+.banner5:hover{
+    color: beige;
+    opacity: 1;
+}
+.banner6:hover{
+    color: beige;
+    opacity: 1;
+}
+
+/*---------------footer banner----------------------------*/
+
+#fotter-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 50px 50px; */
+    padding: 50px 30px 10px 30px;
+    /* height: 0px; */
+    background:radial-gradient(white,rgb(177, 209, 219));
+}
+#col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+#col img{
+    width: 340px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+#col h4{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+#col p{
+    font-size: 15px;
+}
+#col a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+#col #follow{
+    margin-top: 10px;
+}
+#col #follow i{
+    color: rgb(99, 98, 98);
+    padding-right: 4px;
+}
+#col #follow i:hover,
+#col a:hover{
+    color: rgb(86, 194, 158);
+}
+
+
+/*------------------------footer--------------------------*/
+
+#fotter{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    background:radial-gradient(rgb(187, 226, 223),rgb(177, 209, 219));
+}
